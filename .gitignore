@@ -1,0 +1,33 @@
+# Entorno Python y archivos generados
+.venv/
+.venv-ubuntu/
+venv/
+__pycache__/
+*.py[cod]
+
+# Copias y artefactos de construcción
+*.bak
+*.pvbackup
+*.tmp
+build/
+dist/
+*.spec
+
+# Datos locales, credenciales y registros
+.pokevault/
+cardtrader_token
+**/cardtrader_token
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.log
+backups/
+.env
+.env.*
+!.env.example
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db

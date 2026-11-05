@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="coin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#20364d"/>
+      <stop offset="1" stop-color="#101827"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#ffe09b"/>
+      <stop offset="0.52" stop-color="#e2a63d"/>
+      <stop offset="1" stop-color="#a87024"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#243b50"/>
+      <stop offset="1" stop-color="#172537"/>
+    </linearGradient>
+  </defs>
+  <circle cx="64" cy="64" r="59" fill="url(#coin)" stroke="url(#gold)" stroke-width="4"/>
+  <circle cx="64" cy="64" r="52" fill="none" stroke="#60738a" stroke-opacity=".38" stroke-width="1.5"/>
+  <g transform="rotate(-8 64 64)">
+    <rect x="32" y="24" width="66" height="83" rx="9" fill="#0d1724" stroke="#f1ca7b" stroke-width="2.5"/>
+    <rect x="38" y="29" width="55" height="73" rx="5" fill="url(#card)"/>
+    <path d="M43 35h45v14H43z" fill="url(#gold)" opacity=".95"/>
+    <circle cx="65.5" cy="67" r="18" fill="#0b1420" stroke="#f4d899" stroke-width="2"/>
+    <path d="M48 67a17.5 17.5 0 0 1 35 0z" fill="#e66d5d"/>
+    <path d="M48 67a17.5 17.5 0 0 0 35 0z" fill="#e8edf2"/>
+    <path d="M48 67h35" stroke="#0b1420" stroke-width="5"/>
+    <circle cx="65.5" cy="67" r="6.3" fill="#e8edf2" stroke="#0b1420" stroke-width="2.8"/>
+    <circle cx="65.5" cy="67" r="2.2" fill="#e2a63d"/>
+    <path d="M47 92h18M70 92h12" stroke="#7f98ad" stroke-width="2.4" stroke-linecap="round"/>
+  </g>
+  <path d="M99 89v17m-7-9 7 7 7-7" fill="none" stroke="#e2a63d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

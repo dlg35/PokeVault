@@ -1,0 +1,46 @@
+PokeVault 5.2.0
+
+INSTALACIÓN CON PYTHON
+1. Instala Python 3.11 o superior.
+2. Abre PowerShell en esta carpeta.
+3. Crea un entorno virtual: py -m venv .venv
+4. Instala dependencias: .venv\Scripts\python.exe -m pip install -r requirements.txt
+5. Ejecuta: .venv\Scripts\python.exe code\main.py
+
+CREAR EJECUTABLE EN WINDOWS
+1. Instala Python en Windows.
+2. Haz doble clic en CREAR_EXE_WINDOWS.bat.
+3. Espera a que termine la compilación (requiere Internet la primera vez).
+4. Abre dist\PokeVault\PokeVault.exe.
+5. Para distribuirlo, copia toda la carpeta dist\PokeVault; no solo el EXE.
+
+INSTALAR EN UBUNTU Y CREAR ACCESO EN EL ESCRITORIO
+1. Abre una Terminal en esta carpeta.
+2. Si Python o venv faltan, ejecuta: sudo apt install python3 python3-venv
+3. Ejecuta: chmod +x CREAR_LANZADOR_UBUNTU.sh
+4. Ejecuta: ./CREAR_LANZADOR_UBUNTU.sh
+5. El script instala dependencias en .venv-ubuntu y crea un acceso directo en ~/Desktop y en el menú de aplicaciones.
+6. Si Ubuntu muestra el aviso de aplicación no confiable, pulsa con el botón derecho en el icono y elige «Permitir iniciar».
+
+El acceso directo apunta a esta carpeta del proyecto; si la mueves, vuelve a ejecutar el script. Es un lanzador de escritorio, no un binario único.
+
+DATOS Y SEGURIDAD
+La colección sigue en %USERPROFILE%\.pokevault\collection.db.
+Las copias automáticas se guardan en %USERPROFILE%\.pokevault\backups.
+Las imágenes y los precios permanecen en el directorio de datos.
+Antes de probar una versión nueva, usa Exportar copia.
+Las copias exportadas usan el formato .pvbackup e incluyen las fotos manuales de colección y deseos; también se pueden restaurar copias .db antiguas, aunque esas copias previas no guardan las fotos dentro.
+Los precios generales se obtienen vía TCGdex; las cotizaciones CardTrader por idioma requieren configurar el token dentro de la aplicación.
+
+FUNCIONES
+- Búsqueda de cartas y expansiones, idiomas y acabados.
+- Filtros de colección por texto, idioma, acabado, estado, expansión y precio ausente.
+- Ordenación por nombre, idioma, expansión, estado, cantidad, incorporación o valor.
+- Precios generales, actualización manual, historial individual y valor total.
+- Exportación/restauración y copias automáticas con retención de 10 copias.
+- Registro de errores en %USERPROFILE%\.pokevault\pokevault.log.
+
+LIMITACIONES
+- El EXE debe compilarse en Windows; no se incluye uno precompilado.
+- No se ha certificado el funcionamiento con 100/500 cartas ni probado en Windows.
+- El instalador clásico (MSI/Setup) todavía no está incluido.
